@@ -1,52 +1,52 @@
-\# Домашнее задание к занятию «Что такое DevOps. CI/CD»
+# Домашнее задание к занятию «Что такое DevOps. CI/CD»
 
-\*\*Ларионов Александр\*\*
-
-
-
-\---
+**Ларионов Александр**
 
 
 
-\## Задание 1 — Jenkins Freestyle Project
+---
 
 
 
-\### Что сделано
-
-1\. Установлен Jenkins (WAR, Java 21) на VM (Ubuntu 18.04, IP 192.168.56.20) без Docker.
-
-2\. Установлены Go и Docker на ту же машину.
-
-3\. Форкнут репозиторий `netology-code/sdvps-materials` → `TheTimeLarson/devops-ci-hw`.
-
-4\. Создан Freestyle Project, подключён репозиторий, запущены `go test .` и `docker build .`.
+## Задание 1 — Jenkins Freestyle Project
 
 
 
-\### Скриншоты
+### Что сделано
 
-!\[Конфигурация Freestyle](img/task1\_config.png)
+1. Установлен Jenkins (WAR, Java 21) на VM (Ubuntu 18.04, IP 192.168.56.20) без Docker.
 
-!\[Результат сборки](img/task1\_build.png)
+2. Установлены Go и Docker на ту же машину.
 
+3. Форкнут репозиторий `netology-code/sdvps-materials` → `TheTimeLarson/devops-ci-hw`.
 
-
-\---
-
-
-
-\## Задание 2 — Jenkins Pipeline (declarative)
+4. Создан Freestyle Project, подключён репозиторий, запущены `go test .` и `docker build .`.
 
 
 
-\### Что сделано
+### Скриншоты
+
+![Конфигурация Freestyle](img/task1_config.png)
+
+![Результат сборки](img/task1_build.png)
+
+
+
+---
+
+
+
+## Задание 2 — Jenkins Pipeline (declarative)
+
+
+
+### Что сделано
 
 Создан pipeline-проект, сборка из Задания 1 переписана на declarative.
 
 
 
-\### Код pipeline
+### Код pipeline
 
 ```groovy
 
